@@ -8,7 +8,7 @@ const App = () => {
   }
   return (
   <div style={{color:"red"}}>
-    <h2>ABES ENGINEERING COLLEGE</h2>
+    <h2>ABES ENGINEERING COLLEGE ghaziabad</h2>
   <Student/>
   </div>
   )
