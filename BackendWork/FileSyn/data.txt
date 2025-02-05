@@ -1,0 +1,1 @@
+Data is not written by nodejsAppended data by fs module
