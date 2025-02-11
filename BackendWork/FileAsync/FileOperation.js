@@ -1,22 +1,23 @@
-const fs=require('fs')
-function dataWriteCB(){
-fs.writeFile("data.pdf","Hello Writing PDF file data",(err)=>{
-if(err){
-    console.log("Error while writing in file:"+err);
-}
-console.log("Data written successfully");
-});
-console.log("Resources closed");
-}
-function dataReadCB(){
+const fs = require("fs");
 
-fs.readFile("data.pdf",{encoding:'utf-8'},(err,data)=>{
-    if(err){
-        console.log("Error while reading in file:"+err);
+function dataWrite() {
+  fs.writeFile("data.pdf", "Hello Writing Pdf File data", (err) => {
+    if (err) {
+      console.log("Error Whiel Wrting in file", err);
     }
-    console.log(data);
-})
+    console.log("Data Wrtten Succesfully ");
+  });
+  console.log("Rsource CLosed");
 }
 
-const obj={dataWriteCB,dataReadCB}
+function dataRead() {
+  fs.readFile("data.pdf", { encoding: "utf-8" }, (err, data) => {
+    if (err) {
+      console.log("Error While Reading the file");
+    }
+    console.log("Data : ", data);
+  });
+}
+
+const obj={dataWrite,dataRead};
 module.exports=obj

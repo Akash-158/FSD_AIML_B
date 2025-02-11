@@ -1,3 +1,3 @@
-const{dataWriteCB,dataReadCB}=require('./FileOperation')
-dataWriteCB()
-dataReadCB()
+const{dataWrite,dataRead}=require('./FileOperation')
+dataWrite()
+dataRead()
